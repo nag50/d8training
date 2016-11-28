@@ -1,0 +1,5 @@
+name: drupal_console_gen
+type: module
+description: Module generated with drupal console
+core: 8.x
+package: Custom

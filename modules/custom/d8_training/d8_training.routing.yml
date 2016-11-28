@@ -1,0 +1,27 @@
+d8_training.node_list:
+  path: '/list/node'
+  defaults:
+    _controller: '\Drupal\d8_training\Controller\NodelistingController::content'
+  requirements:
+    _permission: 'access content'
+
+d8_training.node_list_content:
+  path: '/list/node/content'
+  defaults:
+    _controller: '\Drupal\d8_training\Controller\NodelistingController::contenttype'
+  requirements:
+    _permission: 'access content'
+
+d8_training.node_list_content:
+  path: '/list/node/type'
+  defaults:
+    _controller: '\Drupal\d8_training\Controller\NodelistingController::contenttype'
+  requirements:
+    _permission: 'access content'
+
+d8_training.node_list_type:
+  path: '/list/type/{node}'
+  defaults:
+    _controller: '\Drupal\d8_training\Controller\NodelistingController::nodeload'
+  requirements:
+    _permission: 'access content'

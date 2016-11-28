@@ -1,0 +1,9 @@
+d8_training.node_list_tab: # The first plugin ID
+  title: 'list'
+  route_name: d8_training.node_list
+  base_route: d8_training.node_list_tab
+
+d8_training.node_list_content_tab: # The second plugin ID
+  title: 'list content'
+  route_name: d8_training.node_list_content
+  base_route: d8_training.node_list_tab

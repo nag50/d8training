@@ -1,0 +1,14 @@
+{
+  "name": "drupal/drupal_console_gen",
+  "type": "drupal-module",
+  "description": "Module generated with drupal console",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/drupal_console_gen",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "http://drupal.org/project/issues/drupal_console_gen",
+    "source": "http://cgit.drupalcode.org/drupal_console_gen"
+  },
+  "require": { }
+}
