@@ -1,0 +1,18 @@
+<?php
+
+function d8_training_schema() {
+  $schema['d8_training_table'] = array(
+    'description' => 'data',
+    'fields' => array(
+      'd8_field' => array(
+        'description' => 'data',
+        'type' => 'varchar',
+        'length' => 32,
+        'not null' => TRUE,
+        'default' => '',
+      ),
+    ),
+  );
+  return $schema;
+}
+

@@ -3,7 +3,7 @@ d8_training.node_list:
   defaults:
     _controller: '\Drupal\d8_training\Controller\NodelistingController::content'
   requirements:
-    _permission: 'access content'
+    _query_access_check: 'TRUE'
 
 d8_training.node_list_content:
   path: '/list/node/content'
@@ -11,6 +11,7 @@ d8_training.node_list_content:
     _controller: '\Drupal\d8_training\Controller\NodelistingController::contenttype'
   requirements:
     _permission: 'access content'
+    custom_access: '\Drupal\d8_training\Controller\NodelistingController::access'
 
 d8_training.node_list_content:
   path: '/list/node/type'
@@ -25,3 +26,18 @@ d8_training.node_list_type:
     _controller: '\Drupal\d8_training\Controller\NodelistingController::nodeload'
   requirements:
     _permission: 'access content'
+
+d8_training.form_page:
+  path: '/form/page'
+  defaults:
+    _form: 'Drupal\d8_training\Form\SimpleForm'
+  requirements:
+    _permission: 'access content'
+
+d8_training.configform:
+  path: '/form/config'
+  defaults:
+    _form: 'Drupal\d8_training\Form\ConfigForm'
+  requirements:
+    _permission: 'access content'
+

@@ -1,0 +1,6 @@
+d8 training content access:
+  title: 'D8 training content access control'
+  description: 'View, edit and delete all d8 training content regardless of permission restrictions.'
+
+permission_callbacks:
+  - Drupal\d8_training\NodelistingPermissions::getPermissions

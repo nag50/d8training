@@ -1,0 +1,9 @@
+services:
+  d8_training.query_access_check:
+    class: Drupal\d8_training\QueryAccessCheck
+    tags: 
+      - { name: access_check, applies_to: _query_access_check }
+
+  d8_training.form_manager:
+    class: Drupal\d8_training\FormManager
+    arguments: ['@database']
