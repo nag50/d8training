@@ -1,0 +1,10 @@
+<?php
+
+function d8_training_theme($existing, $type, $theme, $path) {
+  return array(
+    'custom_block_display' =>
+      array('variables' => array('weather' => NULL)
+    )
+  );
+}
+

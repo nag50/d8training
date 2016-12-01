@@ -4,3 +4,7 @@ d8 training content access:
 
 permission_callbacks:
   - Drupal\d8_training\NodelistingPermissions::getPermissions
+
+access content:
+  title: 'Access content'
+  description: 'Allow access to my content'

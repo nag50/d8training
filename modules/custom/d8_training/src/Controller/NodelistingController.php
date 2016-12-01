@@ -40,7 +40,7 @@ class NodelistingController extends ControllerBase {
 $total = $total_count['count'];
 //$page = pager_default_initialize($total, $limit);
 
-    $headers[]=array(
+    $headers = array(
       'nid',
       'vid',
       'type',
